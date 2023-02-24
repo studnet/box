@@ -1,0 +1,4 @@
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+curl -s https://mailinabox.email/setup.sh | sudo bash
+echo "Miab upgrade with disabled ipv6 finised, please REBOOT Ubuntu now to restore ipv6!"

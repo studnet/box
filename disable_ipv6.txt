@@ -1,0 +1,23 @@
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
+
+
+# ----------------------------------------------
+# Above method don't persist over boot.
+#
+# For re-enabling ipv6:
+#
+# sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+# sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
+#   OR
+# sudo reboot
+#
+# ----------------------------------------------------------
+# For persistancy add follwowing lines to /etc/sysctl.conf :
+#
+# net.ipv6.conf.all.disable_ipv6=1
+# net.ipv6.conf.default.disable_ipv6=1
+#
+# Info from: 
+# https://linuxconfig.org/how-to-disable-ipv6-address-on-ubuntu-18-04-bionic-beaver-linux

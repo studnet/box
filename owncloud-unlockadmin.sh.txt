@@ -1,0 +1,3 @@
+# Skript tekitamaks Nextcloudi manageerimiseks MiaB-s mõnele kontole admin õigusi, saab käivitada näiteks:
+
+sudo mailinabox/tools/owncloud-unlockadmin.sh boxer@eesik.net
